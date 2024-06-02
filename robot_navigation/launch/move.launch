@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <include file="$(find ros_vosk)/launch/ros_vosk.launch"/>
+
+  <node name="boo" pkg="robot_navigation" type="sequ_of_goals.py" output="screen"/>
+  
+</launch>
+

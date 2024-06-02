@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Map real robot -->
+
+  <!-- Office Map-->
+  <!--arg name="map_file" default="$(find robot_navigation)/maps/all_btm/map.yaml"/-->
+
+  <!-- BTM Map -->
+  <!--arg name="map_file" default="$(find robot_navigation)/maps/all_btm/big_area.yaml"/>
+  <master auto="start"/-->
+
+  <!-- Map simulation -->
+
+
+  <master auto="start"/>
+
+  <!-- Map server -->
+
+
+  <!-- AMCL -->
+  <include file="$(find robot_navigation)/launch/amcl.launch"/>
+
+  <!-- move_base -->
+
+
+
+  <include file="$(find robot_navigation)/launch/move_base.launch"/>
+
+
+
+
+
+</launch>
